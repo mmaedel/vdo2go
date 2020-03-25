@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+
+      {"src": "./main/index.go", "use": "@now/go"}
+
+    ],
+
+    "routes": [
+        {
+          "src": "/",
+          "dest": "https://start.medienwerk.now.sh"
+        }
+      ],
+      
+    "alias": "vdo2go.dev",
+    
+    "env": {
+      "PP_CLIENT_ID": "@ppc",
+      "PP_SECRET": "@pps"
+      }
+        
+    }
